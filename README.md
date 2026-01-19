@@ -49,7 +49,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3001](http://localhost:3001) in your browser.
 
 ## Usage
 
@@ -105,7 +105,7 @@ npm run start
 ### Environment Considerations
 
 - The app uses **local storage** for data persistence, so no database setup is required
-- Default port is **3000**; set the `PORT` environment variable to change it
+- Default port is **3001**; set the `PORT` environment variable to change it
 - For deployment platforms (Vercel, Netlify, etc.), use:
   - **Build command**: `npm run build`
   - **Start command**: `npm run start`
