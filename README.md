@@ -51,6 +51,66 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Usage
+
+### Kanban Board
+- Click **"+ Add Task"** in any column to create a new task
+- **Drag and drop** tasks between columns (Backlog → In Progress → Completed)
+- Click the **trash icon** on a task card to delete it
+- Tasks automatically save to local storage
+
+### Todo List
+- Type in the input field and press **Enter** or click **"+"** to add a new item
+- Click the **checkbox** to mark items as complete
+- Click the **trash icon** to delete an item
+- Great for quick tasks that don't need full Kanban tracking
+
+### Notes
+- Click **"+ New Note"** to create a note
+- Click on a note in the list to open it in the editor
+- **Double-click** a note title to rename it
+- Click the **X** button to delete a note
+- Notes auto-save as you type
+
+## Available Scripts
+
+Run these commands from the project root:
+
+```bash
+# Start development server with hot reload
+npm run dev
+
+# Create optimized production build
+npm run build
+
+# Run the production server (requires build first)
+npm run start
+
+# Run ESLint to check code quality
+npm run lint
+```
+
+## Production Deployment
+
+### Building for Production
+
+```bash
+# Create production build
+npm run build
+
+# Start production server
+npm run start
+```
+
+### Environment Considerations
+
+- The app uses **local storage** for data persistence, so no database setup is required
+- Default port is **3000**; set the `PORT` environment variable to change it
+- For deployment platforms (Vercel, Netlify, etc.), use:
+  - **Build command**: `npm run build`
+  - **Start command**: `npm run start`
+- Next.js automatically optimizes for production with static generation where possible
+
 ## Project Structure
 
 ```
